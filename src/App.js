@@ -1,26 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import PropTypes from "prop-types";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Header from "./components/Header/Header";
+import List from "./components/List/List";
+import RightPanel from "./components/RightPanel/RightPanel";
+import { withRouter } from "react-router-dom";
+
+function App(props) {
+	return (
+		<div className="App">
+			<div className="Layout">
+				<Header />
+				<List search={props.location.search}/>
+			</div>
+			<RightPanel></RightPanel>
+			{/* <button */}
+			{/* 	onClick={() => */}
+			{/* 		props.history.push({ */}
+			{/* 			search: "?asd=" + Math.random().toFixed(3) */}
+			{/* 		}) */}
+			{/* 	} */}
+			{/* > */}
+			{/* 	asasd */}
+			{/* </button> */}
+		</div>
+	);
 }
 
-export default App;
+App.propTypes = {
+	history: PropTypes.any,
+	location: PropTypes.any
+};
+
+export default withRouter(App);

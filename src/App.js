@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import logo from "./logo.svg";
 import PropTypes from "prop-types";
 import "./App.css";
@@ -9,6 +9,11 @@ import RightPanel from "./components/RightPanel/RightPanel";
 import { withRouter } from "react-router-dom";
 
 function App(props) {
+	useEffect(() => {
+		if(props.location.search.indexOf("type") == -1) {
+			props.history.push({search: "?type=movie"});
+		}
+	}, [props.location.search])
 	return (
 		<div className="App">
 			<div className="Layout">

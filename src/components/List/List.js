@@ -39,6 +39,7 @@ class List extends PureComponent {
 
 	componentDidUpdate(prevProps, prevState) {
 		if (prevProps.search != this.props.search) {
+			this.setState({loading: true});
 			const query = parseQueryString(this.props.search);
 			let type = query.type,
 				search = toQueryString({

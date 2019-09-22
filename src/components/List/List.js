@@ -7,63 +7,7 @@ import { parseQueryString, toQueryString } from "../../util";
 class List extends PureComponent {
 	state = {
 		items: [
-			{
-				popularity: 568.124,
-				vote_count: 165,
-				video: false,
-				poster_path:
-					"https://static.posters.cz/image/350webp/76122.webp",
-				id: 474350,
-				adult: false,
-				backdrop_path: "/4W0FnjSGn4x0mKZlBRx8OjFxQUM.jpg",
-				original_language: "en",
-				original_title: "It Chapter Two",
-				genre_ids: [27],
-				title: "It Chapter Two",
-				vote_average: 7.3,
-				overview: `27 years after overcoming the malevolent supernatural entity
-			Pennywise, the former members of the Losers' Club, who have grown up and moved away
-			from Derry, are brought back together by a devastating phone call.",
-			"release_date": "2019-09-06`
-			},
-			{
-				popularity: 568.124,
-				vote_count: 165,
-				video: false,
-				poster_path:
-					"https://static.posters.cz/image/350webp/76122.webp",
-				id: 474350,
-				adult: false,
-				backdrop_path: "/4W0FnjSGn4x0mKZlBRx8OjFxQUM.jpg",
-				original_language: "en",
-				original_title: "It Chapter Two",
-				genre_ids: [27],
-				title: "It Chapter Two",
-				vote_average: 7.3,
-				overview: `27 years after overcoming the malevolent supernatural entity
-			Pennywise, the former members of the Losers' Club, who have grown up and moved away
-			from Derry, are brought back together by a devastating phone call.",
-			"release_date": "2019-09-06`
-			},
-			{
-				popularity: 568.124,
-				vote_count: 165,
-				video: false,
-				poster_path:
-					"https://static.posters.cz/image/350webp/76122.webp",
-				id: 474350,
-				adult: false,
-				backdrop_path: "/4W0FnjSGn4x0mKZlBRx8OjFxQUM.jpg",
-				original_language: "en",
-				original_title: "It Chapter Two",
-				genre_ids: [27],
-				title: "It Chapter Two",
-				vote_average: 7.3,
-				overview: `27 years after overcoming the malevolent supernatural entity
-			Pennywise, the former members of the Losers' Club, who have grown up and moved away
-			from Derry, are brought back together by a devastating phone call.",
-			"release_date": "2019-09-06`
-			}
+			
 		],
 		loading: true,
 		error: null
